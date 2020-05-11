@@ -5,16 +5,14 @@
     versionCode = "10"
     version     = "1.0.0" >
 
-  <name>Paytor</name>
+  <name>Nombre de la App</name>
 
   <description>
-      App para facilitar cuentas de nomina y que te pueda ayudar en lo que
-      puedes o no gastar, esto para que sea mas fácil ordenar tus cuentas y
-      cumplir tus metas.
+      Descripción de la App
   </description>
 
-  <author href="https://www.midominio.com" email="mcavied3@uniminuto.edu.co">
-      Marlon Caviedes
+  <author href="https://www.midominio.com" email="micorreo@uniminuto.edu.co">
+      Nombre del creador
   </author>
   
   <icon src="icon.png" />
