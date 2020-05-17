@@ -50,6 +50,11 @@
 
     <div data-role="page" id="perfildeusuario">
       <div data-role="header">
+        <a
+          href="#login"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
         <h1>PERFIL DEL USUARIO</h1>
       </div>
       <!-- /header -->
@@ -112,40 +117,27 @@
         </form>
       </div>
       <!-- /content -->
-
-      <div data-role="footer">
-        <a
-          href="index.html"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
-        >
-      </div>
-      <!-- /footer -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="registroyconsejo">
-      <div role="main" class="ui-content">
-        <a href="#registrooperaciones" class="ui-btn">REGISTRO OPERACIONES</a>
-        <a href="#consejoeconomico" class="ui-btn">CONSEJO ECONÓMICO</a>
-        <a href="#crearobjetivo" class="ui-btn">CREAR OBJETIVO</a>
-        <a href="#configuracion" class="ui-btn">CONFIGURACIONES</a>
-      </div>
+      <ul data-role="listview" data-inset="true">
+        <li><a href="#registrooperaciones">REGISTRO OPERACIONES</a></li>
+        <li><a href="#consejoeconomico">CONSEJO ECONÓMICO</a></li>
+        <li><a href="#crearobjetivo">CREAR OBJETIVO</a></li>
+        <li><a href="#configuracion">CONFIGURACIONES</a></li>
+      </ul>
       <!-- /content -->
-
-      <div data-role="footer">
-        <a
-          href="index.html"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
-        >
-      </div>
-      <!-- /footer -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="registrooperaciones">
       <div data-role="header">
+        <a
+          href="#registroyconsejo"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
         <h5>REGISTRO OPERACIONES</h5>
       </div>
       <!-- /header -->
@@ -220,20 +212,16 @@
         <a href="#registroyconsejo" class="ui-btn ui-corner-all">Aceptar</a>
       </div>
       <!-- /content -->
-
-      <div data-role="footer">
-        <a
-          href="#registroyconsejo"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
-        >
-      </div>
-      <!-- /footer -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="consejoeconomico">
       <div data-role="header">
+        <a
+          href="#registroyconsejo"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
         <h5>CONSEJO ECONÓMICO</h5>
       </div>
       <!-- /header -->
@@ -295,19 +283,19 @@
         </form>
       </div>
       <!-- /content -->
-
-      <div data-role="footer">
-        <a
-          href="#registroyconsejo"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
-        >
-      </div>
-      <!-- /footer -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="crearobjetivo">
+      <div data-role="header">
+        <a
+          href="#registroyconsejo"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+        <h5>PAYTOR</h5>
+      </div>
+      <!-- /header -->
       <div role="main" class="ui-content">
         <h3>CREAR OBJETIVO</h3>
         <form>
@@ -384,21 +372,17 @@
         <button class="ui-btn">ACEPTAR</button>
       </div>
       <!-- /content -->
-
-      <div data-role="footer">
-        <a
-          href="#registroyconsejo"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
-        >
-      </div>
-      <!-- /footer -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="notificaciones">
       <div data-role="header">
-        <h1>Notificaciones</h1>
+        <a
+          href="#configuracion"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+        <h5>NOTIFICACIONES</h5>
       </div>
       <!-- /header -->
 
@@ -450,39 +434,172 @@
         </form>
       </div>
       <!-- /content -->
-
-      <div data-role="footer">
-        <a
-          href="#configuracion"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
-        >
-      </div>
-      <!-- /footer -->
     </div>
     <!-- /page -->
 
     <div data-role="page" id="configuracion">
       <div data-role="header">
-        <h1>CONFIGURACIÓN</h1>
+        <a
+          href="#registroyconsejo"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+        <h5>CONFIGURACIÓN</h5>
       </div>
       <!-- /header -->
 
       <div role="main" class="ui-content">
-        <a href="#perfildeusuario" class="ui-btn">PERFIL DE USUARIO</a>
-        <button class="ui-btn">CREAR OBJETIVO</button>
+        <a href="#configuracionperfil" class="ui-btn">PERFIL DE USUARIO</a>
+        <a href="#listadeobjetivos" class="ui-btn">LISTA DE OBJETIVOS</a>
         <a href="#notificaciones" class="ui-btn">NOTIFICACIONES</a>
       </div>
       <!-- /content -->
+    </div>
+    <!-- /page -->
 
-      <div data-role="footer">
+    <div data-role="page" id="configuracionperfil">
+      <div data-role="header">
         <a
-          href="#registroyconsejo"
-          class="ui-btn ui-shadow ui-corner-all ui-icon-arrow-l ui-btn-icon-left"
-          >Atras</a
+          href="#configuracion"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
         >
+        <h1>PERFIL DEL USUARIO</h1>
       </div>
-      <!-- /footer -->
+      <!-- /header -->
+
+      <div role="main" class="ui-content">
+        <form>
+          <label for="text-11">Nombres y Apellidos:</label>
+          <input
+            type="text"
+            data-clear-btn="true"
+            name="text-11"
+            id="text-11"
+            value=""
+          />
+        </form>
+
+        <form>
+          <label for="tel-2">Celular:</label>
+          <input
+            type="tel"
+            data-clear-btn="false"
+            name="tel-2"
+            id="tel-2"
+            value=""
+          />
+        </form>
+
+        <form>
+          <label for="email-2">Correo:</label>
+          <input
+            type="email"
+            data-clear-btn="false"
+            name="email-2"
+            id="email-2"
+            value=""
+          />
+        </form>
+        <form>
+          <label for="password-4">Contraseña</label>
+          <input
+            type="password"
+            data-clear-btn="false"
+            name="password-4"
+            id="password-4"
+            value=""
+            autocomplete="off"
+          />
+        </form>
+        <form>
+          <label for="password-5">Repetir Contraseña</label>
+          <input
+            type="password"
+            data-clear-btn="false"
+            name="password-5"
+            id="password-5"
+            value=""
+            autocomplete="off"
+          />
+          <a href="#configuracion" class="ui-btn">Aceptar Cambios</a>
+        </form>
+      </div>
+      <!-- /content -->
+    </div>
+    <!-- /page -->
+
+    <div data-role="page" id="listadeobjetivos">
+      <div data-role="header">
+        <a
+          href="#configuracion"
+          class="ui-btn ui-icon-arrow-l ui-btn-icon-notext ui-corner-all"
+          >No text</a
+        >
+        <h5>LISTA DE OBJETIVOS</h5>
+      </div>
+      <!-- /header -->
+
+      <form>
+        <label for="textarea-1">Objetivo 1</label>
+        <textarea name="textarea-1" id="textarea-1"></textarea>
+      </form>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit"
+      >
+        editar
+      </button>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-delete"
+      >
+        eliminar
+      </button>
+
+      <form>
+        <label for="textarea-2">Objetivo 2</label>
+        <textarea name="textarea-2" id="textarea-2"></textarea>
+      </form>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit"
+      >
+        editar
+      </button>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-delete"
+      >
+        eliminar
+      </button>
+      <form>
+        <label for="textarea-3">Objetivo 3</label>
+        <textarea name="textarea-3" id="textarea-3"></textarea>
+      </form>
+
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit"
+      >
+        editar
+      </button>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-delete"
+      >
+        eliminar
+      </button>
+      <form>
+        <label for="textarea-4">Objetivo 4</label>
+        <textarea name="textarea-4" id="textarea-4"></textarea>
+      </form>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-edit"
+      >
+        editar
+      </button>
+      <button
+        class="ui-btn ui-shadow ui-corner-all ui-btn-icon-left ui-icon-delete"
+      >
+        eliminar
+      </button>
+
+      <!-- /content -->
     </div>
     <!-- /page -->
   </body>
